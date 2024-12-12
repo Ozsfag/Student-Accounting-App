@@ -1,0 +1,7 @@
+spring:
+  shell:
+    interactive:
+      enabled: true
+
+app:
+  init-students: true
