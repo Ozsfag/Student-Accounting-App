@@ -27,6 +27,6 @@ The application can be configured through `application.yml`:
 ## Running the Application
 
 ### Docker:
-
+- `$./gradlew bootJar`
 - `docker build -t student-management .`
 - `docker run -it student-management`
