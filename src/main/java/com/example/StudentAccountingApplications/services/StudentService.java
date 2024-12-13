@@ -14,9 +14,7 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.concurrent.ConcurrentHashMap;
 
-/**
- * Service for managing students.
- */
+/** Service for managing students. */
 @Service
 @Slf4j
 @RequiredArgsConstructor
@@ -29,8 +27,8 @@ public class StudentService {
    * Adds a new student.
    *
    * @param firstName the first name of the student
-   * @param lastName  the last name of the student
-   * @param age       the age of the student
+   * @param lastName the last name of the student
+   * @param age the age of the student
    * @return the created student
    */
   public Student addStudent(String firstName, String lastName, int age) {
@@ -49,10 +47,11 @@ public class StudentService {
    */
   public Optional<Student> deleteStudent(Long id) {
     Optional<Student> student = Optional.ofNullable(students.remove(id));
-    student.ifPresent(s -> {
-      applicationEventPublisher.publishEvent(new StudentDeletedEvent(id));
-      log.info("Deleted student: {}", s);
-    });
+    student.ifPresent(
+        s -> {
+          applicationEventPublisher.publishEvent(new StudentDeletedEvent(id));
+          log.info("Deleted student: {}", s);
+        });
     return student;
   }
 
@@ -65,9 +64,7 @@ public class StudentService {
     return students.values();
   }
 
-  /**
-   * Clears all students.
-   */
+  /** Clears all students. */
   public void clearAll() {
     students.clear();
     log.info("All students have been removed.");

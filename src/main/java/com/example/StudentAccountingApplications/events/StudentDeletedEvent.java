@@ -2,9 +2,7 @@ package com.example.StudentAccountingApplications.events;
 
 import lombok.Getter;
 
-/**
- * Event representing the deletion of a student.
- */
+/** Event representing the deletion of a student. */
 @Getter
 public class StudentDeletedEvent {
   private final Long studentId;

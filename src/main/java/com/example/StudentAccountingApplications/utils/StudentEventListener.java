@@ -6,9 +6,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Component;
 
-/**
- * Listener for student-related events.
- */
+/** Listener for student-related events. */
 @Component
 @Slf4j
 public class StudentEventListener {

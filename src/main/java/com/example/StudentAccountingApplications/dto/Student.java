@@ -4,9 +4,7 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.ToString;
 
-/**
- * Represents a student with an ID, first name, last name, and age.
- */
+/** Represents a student with an ID, first name, last name, and age. */
 @Getter
 @ToString
 public class Student {

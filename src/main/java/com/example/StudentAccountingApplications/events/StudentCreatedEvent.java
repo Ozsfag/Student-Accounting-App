@@ -3,9 +3,7 @@ package com.example.StudentAccountingApplications.events;
 import com.example.StudentAccountingApplications.dto.Student;
 import lombok.Getter;
 
-/**
- * Event representing the creation of a new student.
- */
+/** Event representing the creation of a new student. */
 @Getter
 public class StudentCreatedEvent {
   private final Student student;
