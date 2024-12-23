@@ -1,0 +1,3 @@
+1733900890376:add-student
+1733900926226:add-student --age 10 --firstName Artem --lastName Sergienko
+1733966044005:list-students
